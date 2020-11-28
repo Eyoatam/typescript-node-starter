@@ -20,7 +20,7 @@
 	"homepage": "https://github.com/Eyoatam/node-express-setup-with-typescrpt/",
 	"dependencies": {
 		"express": "^4.16.1",
-		"jest": "^26.6.3",
+		"jest": "^26.6.1",
 		"morgan": "^1.10.0",
 		"nodemon": "^2.0.6",
 		"ts-node": "^9.0.0"
