@@ -1,7 +1,7 @@
 {
 	"name": "node-typescript-setup-ex",
 	"version": "1.0.0",
-	"description": "example of node and typescript setup",
+	"description": "example of node, express with typescript",
 	"main": "index.js",
 	"author": "Eyoatam Tamirat",
 	"scripts": {
