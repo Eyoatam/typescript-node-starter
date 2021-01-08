@@ -1,19 +1,8 @@
-import express from "express";
-import bodyParser from "body-parser";
-import { jest } from "@jest/globals";
-
-jest.useFakeTimers();
-
-// etc.
-
-test("starts the app", () => {
-	const app = express();
-
-	app.use(bodyParser.urlencoded({ extended: false }));
-	app.use(bodyParser.json());
-	app.use((req, res, next) => {
-		console.log("request acepted");
-		res.status(200).json({ messgae: "request accepted" });
-		next();
-	});
+test("some dummy test", () => {
+	const random = Math.floor(Math.random() * 2);
+	if (random <= 2) {
+		return;
+	} else {
+		throw new Error(`${random} is greater than 2`);
+	}
 });
