@@ -1,8 +1,7 @@
 import express from "express";
 import morgan from "morgan";
 import bodyParser from "body-parser";
-import { Application, Request, Response, NextFunction } from "express";
-const app: Application = express();
+const app = express();
 
 const port = 3000;
 
@@ -11,7 +10,7 @@ app.use(morgan("dev"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.get("/", (req: Request, res: Response, next: NextFunction) => {
+app.get("/", (req, res, next) => {
 	res.status(200).json({ message: "request accepted" });
 	next();
 });
